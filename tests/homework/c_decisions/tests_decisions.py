@@ -20,3 +20,14 @@ def test_get_faculty_rating_table():
 	assert get_faculty_rating(0.9) == 'Excellent'
 	assert get_faculty_rating(0.99) == 'Excellent'
 	assert get_faculty_rating(1) == 'Invalid Ratio'
+
+
+import sys
+sys.path.append("./")
+from src.homework.c_decisions.decisions import get_letter_grade
+def test_get_letter_grade_table():
+    assert get_letter_grade(95) == 'A'
+    assert get_letter_grade(85) == 'B'
+    assert get_letter_grade(75) == 'C'
+    assert get_letter_grade(65) == 'D'
+    assert get_letter_grade(50) == 'F'
