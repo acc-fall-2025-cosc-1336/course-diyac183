@@ -9,3 +9,9 @@ sys.path.append("./")
 tests_strings
 suite = unittest.TestLoader().loadTestsFromModule(tests_strings)
 unittest.TextTestRunner(verbosity=2).run(suite)
+from tests.homework.g_lists_and_tuples import tests_lists_and_tuples
+import sys
+sys.path.append("./")
+tests_lists_and_tuples
+suite = unittest.TestLoader().loadTestsFromModule(tests_lists_and_tuples)
+unittest.TextTestRunner(verbosity=2).run(suite)
